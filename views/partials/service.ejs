@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/main.js" defer></script>
+    
+    <style>
+
+/* .custom-navbar{
+       
+        background-color: rgb(251, 237, 202);
+        border-bottom: 5px solid gray;
+      } */
+      /* .container-fluid .navbar-brand{
+
+        color:red;
+        font-size: 30px;
+        font-weight: bolder;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+      }
+      */
+      
+        /* #frame {
+            background-color: aqua;
+        }
+        .nav-item .nav-link, .nav-item {
+            color: red;
+        }
+       
+        .nav-item .nav-link:hover {
+            transform: scale(1.2);
+            text-decoration: underline;
+            background-color: rgb(245, 213, 171);
+            opacity: 0.5;
+            cursor: pointer;
+            font-weight: bolder;
+            border-radius: 20px;
+        }
+        .nabar-expand-lg{
+          background-color: rgb(95, 93, 93);
+         
+        }
+        .navbar-toggler{
+          color:white;
+        }
+
+        img{
+            height:280px;
+        }
+        #logo{
+          width: fit-content;
+          height:60px;
+         
+        
+        }
+      
+         .card{
+            box-shadow: 0px 25px 25px -10px rgba(13, 12, 12, 0.3);
+         }
+          */
+          
+        
+        /* .card:hover{
+          transform: scale(1.03);
+        } */
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+   
+
+
+
+
+      <nav class="navbar custom-navbar ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/images/last logo.png" id="logo"alt="Logo" width="30" height="24">
+            MILTON GAIRE
+          </a>
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="homeejs">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutejs">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="projectejs">My Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="serviceejs">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="contactejs">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 custom-search" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success custom-submit" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center">Our Services</h1>
+        <div class="row">
+         
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="/images/webdev.webp" class="card-img-top" alt="Service 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">We offer professional web development services to create stunning websites for your business.</p>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="/images/mbldev.jpg" class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile App Development</h5>
+                        <p class="card-text">Get top-notch mobile app development solutions to reach your audience on all devices.</p>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="/images/security.webp" class="card-img-top" alt="Service 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Security and Data Protection</h5>
+                        <p class="card-text">We prioritize the security of your data and provide robust protection solutions for your business.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="/images/hosting.avif" class="card-img-top" alt="Service 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Hosting and Domain Setup</h5>
+                        <p class="card-text">We provide reliable web hosting and domain setup services to get your website online quickly and securely.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="anchor">
+            <a href="#">Terms and Condition</a>
+            <a href="#">Privacy Policy</a>
+            <a href="contactejs">Contact Form</a>
+        </div>
+        <div id="cop">
+            Copyright &copy; MILTON GAIRE Pvt.Ltd 2023 All rights reserved.
+        </div>
+    </div>
+
+
+</body>
+</html>

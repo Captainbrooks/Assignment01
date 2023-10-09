@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/main.js" defer></script>
+    
+
+    <style>
+        /* .navbar{
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            background-color: rgb(223, 211, 235);
+        }
+        #frame{
+            background-color: aqua;
+        }
+        .nav-item  .nav-link,.nav-item{
+          color: red;
+        }
+        .nav-item  .nav-link:hover{
+            transform: scale(1.2);
+            text-decoration: underline;
+            background-color: rgb(245, 213, 171);
+            opacity: 0.5;
+            cursor: pointer;
+            font-weight: bolder;
+            border-radius: 20px;
+        }
+         #top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+         .mb-3{
+            width:500px;
+         }
+         #bigbox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+         input{
+            border-radius: 20px;
+         }
+         #success-message {
+            color: green;
+            font-weight: bold;
+           
+         } */
+     
+    </style>
+  </head>
+  <body>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ 
+    <nav class="navbar custom-navbar ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/images/last logo.png" id="logo"alt="Logo" width="30" height="24">
+            MILTON GAIRE
+          </a>
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="homeejs">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutejs">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="projectejs">My Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="serviceejs">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="contactejs">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 custom-search" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success custom-submit" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    <div id="top">
+        <h1 id="head">Contact Us</h1>
+        <p id="para">Got a question? We 'd love to hear from you. Send us a message and we 'll respond as soon as possible</p>
+    </div>
+
+    <div id="bigbox">
+        <form id="contact-form" class="mb-3">
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter your first Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter your last Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="contact" class="form-label">Contact</label>
+                <input type="text" class="form-control" id="contact" placeholder="e.g. +1 (437)-(411)-(6745)" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your message goes here..." required></textarea>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" type="submit">Submit</button>
+                <p id="success-message"></p>
+            </div>
+           
+        </form>
+       
+    </div>
+
+    <script>
+        // JavaScript to handle form submission and success message
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the default form submission
+            // Here, you can add code to send the form data to your server using AJAX if needed.
+            
+            // Clear the form fields
+            document.getElementById('firstName').value = '';
+            document.getElementById('lastName').value = '';
+            document.getElementById('contact').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+
+            // Display success message
+            document.getElementById('success-message').textContent = 'Your message has been sent successfully.';
+            setTimeout(function () {
+                document.getElementById('success-message').textContent = '';
+                window.location.href = 'indexejs';
+            }, 3000);
+        });
+    </script>
+
+<div id="footer">
+    <div id="anchor">
+        <a href="#">Terms and Condition</a>
+        <a href="#">Privacy Policy</a>
+        <a href="contactejs">Contact Form</a>
+    </div>
+    <div id="cop">
+        Copyright &copy; MILTON GAIRE Pvt.Ltd 2023 All rights reserved.
+    </div>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/main.js" defer></script>
+    
+    <style>
+        /* .navbar{
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            background-color: rebeccapurple;
+        }
+        #frame{
+            background-color: aqua;
+        }
+        .nav-item  .nav-link,.nav-item{
+          color: red;
+         
+          
+        }
+        .nav-item  .nav-link:hover{
+            transform: scale(1.2);
+            text-decoration: underline;
+            background-color: rgb(245, 213, 171);
+            opacity: 0.5;
+            cursor: pointer;
+            font-weight: bolder;
+            border-radius: 20px;
+          
+        }
+      
+         #pic{
+         margin: auto;
+         border-radius: 10px;
+         box-shadow: 0px 25px 25px -10px rgba(62, 61, 61, 0.502);
+           
+            height:400px;
+            width:400px;
+            background-image: url("mypic.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(227, 225, 221, 0.553);
+   
+         }
+         .detail{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+         }
+         #color{
+            color: rgb(218, 25, 25);
+        }
+        h2,p{
+            padding: 20px;
+            color: #0a0000;
+            text-shadow: 1px 1px 2px rgba(133, 129, 129, 0.566);
+            font-size: 20px;
+  
+
+        }
+    .btn{
+        margin-bottom:  10px;
+    } */
+       
+          
+         
+           
+
+     
+     
+    </style>
+  </head>
+  <body>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+    <nav class="navbar custom-navbar ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/images/last logo.png" id="logo"alt="Logo" width="30" height="24">
+            MILTON GAIRE
+          </a>
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="homeejs">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutejs">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="projectejs">My Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="serviceejs">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="contactejs">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 custom-search" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success custom-submit" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </nav>
+
+    
+
+            <div class="detail">
+            <div id="pic"></div>
+
+            <h2 id="h2A"><span id="colorA">MILTON GAIRE</span></h2>
+            <p class="pA">
+                Hello, I'm <span id="color">MILTON GAIRE</span>, a passionate web developer originally from the enchanting landscapes of Nepal. Currently, I'm pursuing my educational journey at Centennial College in the vibrant city of Toronto, Ontario. My fascination with web development began during my early college years, and it has since evolved into a deep-rooted passion. I thrive on the challenges of crafting elegant and highly functional websites that not only meet but exceed expectations. With a strong background in web development and a commitment to continuous learning, I'm dedicated to harnessing the limitless possibilities of 
+                the web to drive positive change and inspire others. Every project I undertake is an opportunity to 
+                leave a lasting legacy of innovation and empowerment.I approach each project with enthusiasm 
+                 and a commitment to excellence. When I'm not coding or designing, you can often find me exploring the diverse
+                  culture and natural beauty of Toronto, seeking inspiration for my next web project. I'm excited about the future
+                   of web development and the opportunities it holds for making our online world more engaging and accessible.
+              </p>
+
+              <p class="pA">To Know about my project click below</p>
+              <button type="button" class="btn btn-primary btnA custom-submit" onclick="window.location.href='projectejs'">Click to see projects</button>
+              <p class="pA">
+              
+                <a href="images/Front End developer resume.pdf" target="_blank" rel="noopener noreferrer">Download my resume (PDF)</a>
+              </p>
+              
+              
+       </div>
+
+       <div id="footer">
+        <div id="anchor">
+            <a href="#">Terms and Condition</a>
+            <a href="#">Privacy Policy</a>
+            <a href="contactejs">Contact Form</a>
+        </div>
+        <div id="cop">
+            Copyright &copy; MILTON GAIRE Pvt.Ltd 2023 All rights reserved.
+        </div>
+    </div>
+
+     
+     
+  </body>
+</html>
