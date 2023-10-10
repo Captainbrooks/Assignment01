@@ -1,16 +1,25 @@
- // JavaScript to handle form submission and success message
+ 
+
+//  Name: Milton gAIRE
+// sTUDENT ID:301291776
+// DATE: 2023-10-09
+
+// js for  contact.ejs
+
+
+  // FUNCTION TO HANDLE THE SUCCUESS MESSAGE...
  document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent the default form submission
-    // Here, you can add code to send the form data to your server using AJAX if needed.
+    e.preventDefault(); 
+
     
-    // Clear the form fields
+
     document.getElementById('firstName').value = '';
     document.getElementById('lastName').value = '';
     document.getElementById('contact').value = '';
     document.getElementById('email').value = '';
     document.getElementById('message').value = '';
 
-    // Display success message
+   
     document.getElementById('success-message').textContent = 'Your message has been sent successfully.';
     setTimeout(function () {
         document.getElementById('success-message').textContent = '';

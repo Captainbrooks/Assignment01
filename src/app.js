@@ -1,20 +1,22 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 7000; // You can choose your desired port number
 
-// Set the view engine to EJS
+
+// Setting the view engine to EJS
 app.set('view engine', 'ejs');
 
-// Import the routes from routes/index.js
+// Importing  the routes from src/routes/index.js
 const routes = require('./routes/index');
 
 // Use the routes
 app.use('/', routes);
 
-// Serve static files from the 'public' directory (if you have static assets)
+// Servinf the  static files from the 'public' directory 
 app.use(express.static('public'));
 
-// Start the server
+// start of the server with port= 7000
+
+const port=7000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
